@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <ui:composition template="/template.xhtml">
+        <ui:define name="center">    
+            <p:panel style="width: 300px; height: 250px; margin: 0 auto; margin-top: 30px;">
+                <h:form id="LoginUserForm" style="height: 250px;">
+                    <h:panelGroup id="display" style="height: 100%;">
+                        <p:panel styleClass="ui-panel-login"/>
+                        <p:panelGrid columns="2" styleClass="ui-noborder"  style="width: 100%;">
+                            <p:outputLabel value="#{bundle.Login_ictex_Usuario}" for="username" />
+                            <p:inputText id="username" value="#{loginController.usuario}" title="#{bundle.Login_ictex_Usuario}" required="true" requiredMessage="Informe o nome de usuário" />
+                            <p:outputLabel value="#{bundle.Login_ictex_Senha}" for="password" />
+                            <p:password id="password" value="#{loginController.senha}" title="#{bundle.Login_ictex_Senha}" required="true" requiredMessage="Informe a senha"/>
+                        </p:panelGrid>
+                        <p:commandButton action="#{loginController.login}" value="#{bundle.Login_ictex_Login}" update="display"/>
+                    </h:panelGroup>
+                </h:form>
+            </p:panel>
+        </ui:define>
+    </ui:composition>
+</html>

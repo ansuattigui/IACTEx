@@ -1,0 +1,89 @@
+.ui-widget {
+    font-size: 0.95em !important;
+}
+
+.ui-widget-content {
+    color: black !important;
+}
+
+.ui-widget-content a {
+    color: brown !important;
+}
+.ui-layout-north {
+    z-index: 20 !important;
+    overflow: visible !important;;
+}
+.ui-layout-north .ui-layout-unit-content {
+    overflow: visible !important;
+}
+.ui-widget-header {
+    text-align: center;
+    text-transform: capitalize !important;
+}
+.ui-button {
+    margin-top: 10px !important;
+}
+
+.ui-button-menu {
+    width: 110px;
+}
+
+.ui-button-text {
+    color: brown !important;
+}
+.ui-panel-cabecalho {
+    background-image: url(img/banner.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-style: none;
+    height: 78px;
+}
+
+.ui-panel-rodape {
+    background-image:url(img/rodape.png); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-style: none;
+    height:25px; 
+}
+
+.ui-panel-centro {
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-style: none;
+    height: 99%;
+    width: auto;
+}
+
+.ui-panel-login {
+    background-image:url(img/login.fw.png); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain;
+    border-style: none;
+    height: 80px;
+}
+
+.ui-panel-change_pass {
+    background-image:url(img/mudarPassw.fw.png); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain;
+    border-style: none;
+    height: 80px;
+}
+
+.ui-menu .ui-menuitem-link {
+    font-weight: normal !important;
+}
+
+.ui-sem-borda {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.ui-text-header {
+    font-size: 14px !important; 
+    font-variant-caps: small-caps; 
+    color: yellow !important;
+}
